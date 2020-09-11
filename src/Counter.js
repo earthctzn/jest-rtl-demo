@@ -22,11 +22,13 @@ export const Counter = () => {
             <button 
                 id="up" 
                 onClick={handleClick}
+                data-testid='up'
             >Up</button>
             
             <button 
                 id="down" 
                 onClick={handleClick}
+                data-testid='down'
             >Down</button>
 
         </div>

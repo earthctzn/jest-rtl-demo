@@ -6,4 +6,19 @@ it("renders properly",() => {
     const { getByText } = render(<Counter />);
     let num = getByText('0');
     expect(num).toBeInTheDocument();
-} )
+});
+
+it("increments count by one when up is clicked.", () => {
+
+    // Destructure our query functions
+    const { getByText, getByTestId } = render(<Counter />);
+
+    // Simulate a click event on the 'up' button.
+    fireEvent.click(getByTestId('up'));
+
+    // Create the variable with the value we are expecting.
+    let num = getByText('1');
+
+    // We expect our test to find the number 1 and return a truthy value.
+    expect(num).toBeTruthy();
+})
