@@ -1,6 +1,6 @@
 {
-  "short_name": "Jest Demo",
-  "name": "Jest/RTL Testing Demo",
+  "short_name": "RTL Demo",
+  "name": "React Testing Library Demo",
   "icons": [
     {
       "src": "favicon.ico",
